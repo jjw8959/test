@@ -15,6 +15,12 @@ struct SwiftUIView: AProtocol {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
             .padding()
         Text("\(a)")
+        
+        if b == true {
+            Text("true")
+        } else {
+            Text("false")
+        }
     }
 }
 

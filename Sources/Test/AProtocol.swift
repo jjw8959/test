@@ -9,7 +9,7 @@ import SwiftUI
 
 public protocol AProtocol: View {
     var a: Int { get set }
-    var b: Int { get }
+    var b: Bool { get }
 }
 
 extension AProtocol {
