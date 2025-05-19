@@ -9,4 +9,5 @@ import SwiftUI
 
 public protocol AProtocol: View {
     var a: Int { get set }
+    internal var b: Int { get set }
 }
