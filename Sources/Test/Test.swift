@@ -5,4 +5,6 @@ import Foundation
 
 public class TestForTest {
     var testString: String = "Hello, World!"
+    
+    public init() {}
 }
