@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public protocol AProtocol: View {
+protocol AProtocol: View {
     var a: Int { get set }
-    internal var b: Int { get set }
+    var b: Int { get set }
 }
