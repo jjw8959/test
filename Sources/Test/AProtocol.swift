@@ -12,7 +12,7 @@ public protocol AProtocol: View {
     var b: Bool { get }
 }
 
-extension AProtocol {
+public extension AProtocol {
     var b: Bool {
         false
     }
