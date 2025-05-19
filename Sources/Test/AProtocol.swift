@@ -7,7 +7,13 @@
 
 import SwiftUI
 
-protocol AProtocol: View {
+public protocol AProtocol: View {
     var a: Int { get set }
-    var b: Int { get set }
+    var b: Int { get }
+}
+
+extension AProtocol {
+    var b: Bool {
+        false
+    }
 }
