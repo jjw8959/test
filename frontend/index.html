@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Document Scanner</h1>
+    <p>Upload an image, then drag the corners to adjust the crop.</p>
+
+    <div id="main-container">
+        <div id="controls">
+            <form id="upload-form">
+                <input type="file" id="file-input" name="file" accept="image/*" required>
+                <button type="submit">Upload Image</button>
+            </form>
+            <button id="process-button" style="display: none;">Process Image</button>
+        </div>
+
+        <div id="editor-container" style="display: none;">
+            <canvas id="editor-canvas"></canvas>
+        </div>
+
+        <div id="preview-container">
+            <!-- The final processed image will appear here -->
+        </div>
+
+        <div id="pdf-bin-container">
+            <h2>PDF Page Bin</h2>
+            <p>Add processed pages here before generating the final PDF.</p>
+            <div id="pdf-pages-list"></div>
+            <button id="generate-pdf-button" style="display: none;">Generate PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

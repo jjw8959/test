@@ -1,0 +1,130 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1c1e21;
+}
+
+p {
+    text-align: center;
+    color: #606770;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+}
+
+#main-container {
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button, input[type="file"] {
+    font-size: 16px;
+    padding: 10px 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+button {
+    background-color: #1877f2;
+    color: white;
+    border-color: #1877f2;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #166fe5;
+}
+
+#process-button {
+    background-color: #42b72a;
+    border-color: #42b72a;
+}
+
+#process-button:hover {
+    background-color: #36a420;
+}
+
+#editor-container {
+    margin: 0 auto;
+    border: 2px dashed #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fa;
+}
+
+#editor-canvas {
+    max-width: 100%;
+    height: auto;
+    cursor: crosshair;
+}
+
+#preview-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#preview-container img {
+    max-width: 48%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 1%;
+}
+
+#pdf-bin-container {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+#pdf-bin-container h2 {
+    text-align: center;
+}
+
+#pdf-pages-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f7f8fa;
+    border-radius: 6px;
+    min-height: 50px;
+}
+
+.pdf-page-thumbnail {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#generate-pdf-button {
+    display: block;
+    margin: 20px auto 0 auto;
+    background-color: #e61616;
+    border-color: #e61616;
+}
+#generate-pdf-button:hover {
+    background-color: #c51313;
+}
